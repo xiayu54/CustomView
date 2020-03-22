@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 自定义属性，就是用来配置自定义 View 的    -->
+    <!-- 自定义属性的 name 最好就是 自定义 View 的名字 -->
+    <declare-styleable name="TextView">
+        <!-- name 属性名称 ，format 格式 -->
+        <!-- 格式： string 文字，color 颜色，dimension 宽高、字体大小，
+                    integer 数字，reference 资源(drawable) -->
+        <attr name="text" format="string"/>
+        <attr name="color" format="color"/>
+        <attr name="textSize" format="dimension"/>
+        <attr name="maxLength" format="integer"/>
+        <!-- background 自定义 view 都是继承自 View，背景有 View 管理 -->
+<!--        <attr name="background" format="reference|color"/>-->
+        <!-- 枚举 -->
+        <attr name="inputType">
+            <enum name="number" value="1"/>
+            <enum name="text" value="2"/>
+            <enum name="password" value="3"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="MyTextView">
+        <!-- 系统有的自定义属性，我们是不可以的自定义的 -->
+        <attr name="MyText" format="string"/>
+        <attr name="MyTextColor" format="color"/>
+        <attr name="MyTextSize" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="StepView">
+        <!-- 系统有的自定义属性，我们是不可以的自定义的 -->
+        <attr name="outerColor" format="color"/>
+        <attr name="innerColor" format="color"/>
+        <attr name="borderWidth" format="dimension"/>
+        <attr name="stepTextColor" format="color"/>
+        <attr name="stepTextSize" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="ColorTrackText">
+        <!-- 系统有的自定义属性，我们是不可以的自定义的 -->
+        <attr name="originColor" format="color"/>
+        <attr name="changeColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="ProgressBar">
+        <!-- 系统有的自定义属性，我们是不可以的自定义的 -->
+        <attr name="progressBarOuterColor" format="color"/>
+        <attr name="progressBarInnerColor" format="color"/>
+        <attr name="progressBarTextColor" format="color"/>
+        <attr name="progressBarWidth" format="dimension"/>
+        <attr name="progressBarTextSize" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="ShapeView">
+        <!-- 系统有的自定义属性，我们是不可以的自定义的 -->
+        <attr name="squareColor" format="color"/>
+        <attr name="triangleColor" format="color"/>
+        <attr name="circleColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="RatingBar">
+        <!-- 系统有的自定义属性，我们是不可以的自定义的 reference 表示资源-->
+        <attr name="normalStar" format="reference"/>
+        <attr name="selectedStar" format="reference"/>
+        <attr name="starNum" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="LetterSideView">
+        <!-- 系统有的自定义属性，-->
+        <attr name="normalColor" format="color"/>
+        <attr name="selectedColor" format="color"/>
+        <attr name="letterSize" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="SlidingMenu">
+        <!-- 系统有的自定义属性，-->
+        <attr name="menuRightMargin" format="dimension"/>
+    </declare-styleable>
+</resources>
